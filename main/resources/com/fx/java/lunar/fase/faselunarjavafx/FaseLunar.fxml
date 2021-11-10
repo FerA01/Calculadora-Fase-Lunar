@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.java.lunar.fase.faselunarjavafx.controladores.ControladorFaseLunar">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="550.0" prefWidth="550.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="271.0" fitWidth="558.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../../../images/Fondo-luna.jpg" />
+                     </image>
+                  </ImageView>
+                  <DatePicker fx:id="fecha" layoutX="187.0" layoutY="156.0" prefHeight="25.0" prefWidth="186.0" />
+                  <Button fx:id="botonObtenerFecha" layoutX="187.0" layoutY="232.0" mnemonicParsing="false" onAction="#obtenerFaseLunar" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: #1a1616;" text="Calcular Fase Lunar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="15.0" />
+                     </font></Button>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="271.0" fitWidth="548.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../../../images/Fondo-universo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="etiquetaFaseLunar" contentDisplay="CENTER" layoutX="191.0" layoutY="42.0" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: #1a1616;" textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font></Label>
+                  <ImageView fx:id="marcoImagen" fitHeight="100.0" fitWidth="100.0" layoutX="234.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
